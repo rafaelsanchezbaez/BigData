@@ -15,36 +15,37 @@
 git clone git@github.com:Luis-Alonso18/Data_Mining.git
 ```
 ![alt text](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_1_f5.png)
-6. Create a branch called development and make this branch the main one by default, this means that it will not be main
+
+### 6. Create a branch called development and make this branch the main one by default, this means that it will not be main
 ```sh
 git branch development
 git checkout development
 ```
 ![alt text](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_1_f6.png)
 
-7. Making a change to the development branch in the README.md file could be "This is the development branch"
+### 7. Making a change to the development branch in the README.md file could be "This is the development branch"
 ![alt text](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_1_f7.png)
 
-8. Make a commit on the development branch
+### 8. Make a commit on the development branch
 ```sh
 git commit -m "Commit description" 
 ```
-9. Push the development branch
+### 9. Push the development branch
 ```sh
 git push 
 ```
 ![alt text](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_1_f8-f9.png)
 
-10. Create a branch called features
+### 10. Create a branch called features
 ```sh
 git branch features
 ```
 ![alt text](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_1_f10.png)
 
-11. Making a change to the features branch in the README.md file can be "This is the features branch"
+### 11. Making a change to the features branch in the README.md file can be "This is the features branch"
 ![alt text](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_1_f11.png)
 
-12. Make the commit on this branch.
+### 12. Make the commit on this branch.
 ```sh
 git commit -m "Commit description" 
 ```
