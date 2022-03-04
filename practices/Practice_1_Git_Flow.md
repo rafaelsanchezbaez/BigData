@@ -12,7 +12,7 @@
 
 ### 5. Clone to our PC
 ```sh
-git clone git@github.com:Luis-Alonso18/Data_Mining.git
+git clone git@github.com:Luis-Alonso18/practica_git_flow.git
 ```
 ![alt text](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_1_f5.png)
 
