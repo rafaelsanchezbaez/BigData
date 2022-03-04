@@ -1,7 +1,8 @@
-# practice 1 git flow
+# Practice 1 git flow
 
 ### 1. Create an account on github.com if you don't have one, if you already have one then we're fine
 ![](_images/practice_1_f1.png)
+![alt text](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_1_f1.png)
 
 ### 2. Configure your github account with SHH key, so as not to enter our username and password every time, we must investigate in Google
 ![](_images/practice_1_f2.png)
