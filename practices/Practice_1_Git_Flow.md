@@ -1,57 +1,52 @@
-#practice 1 git flow
+# practice 1 git flow
 
-1. Create an account on github.com if you don't have one, if you already have one then we're fine
-(Imagen)
+### 1. Create an account on github.com if you don't have one, if you already have one then we're fine
+![](_images/practice_1_f1.png)
 
-2. Configure your github account with SHH key, so as not to enter our username and password every time, we must investigate in Google
-(Imagen)
+### 2. Configure your github account with SHH key, so as not to enter our username and password every time, we must investigate in Google
+![](_images/practice_1_f2.png)
 
-3. Create a new repository called pratica_git_flow
-4. Create a default README.md
-(Imagen)
+### 3. Create a new repository called pratica_git_flow
+### 4. Create a default README.md
+![](_images/practice_1_f3-f4.png)
 
-5. Clone to our PC
-MD
-```
+### 5. Clone to our PC
+```sh
 git clone git@github.com:Luis-Alonso18/Data_Mining.git
 ```
-(Image)
+![](_images/practice_1_f5.png)
 6. Create a branch called development and make this branch the main one by default, this means that it will not be main
-MD
-```
+```sh
 git branch development
 git checkout development
 ```
-(Imagen)
+![](_images/practice_1_f6.png)
 
 7. Making a change to the development branch in the README.md file could be "This is the development branch"
-(Imagen)
+![](_images/practice_1_f7.png)
 
 8. Make a commit on the development branch
-MD
-```
+```sh
 git commit -m "Commit description" 
 ```
 9. Push the development branch
-MD
-```
+```sh
 git push 
 ```
-(Imagen)
+![](_images/practice_1_f8-f9.png)
 
 10. Create a branch called features
-MD
-```
+```sh
 git branch features
 ```
-(Imagen)
+![](_images/practice_1_f10.png)
 
 11. Making a change to the features branch in the README.md file can be "This is the features branch"
-(Image)
+![](_images/practice_1_f11.png)
 
 12. Make the commit on this branch.
-MD
-```
+```sh
 git commit -m "Commit description" 
 ```
-(Image)
+![](_images/practice_1_f12.png)
+![](_images/practice_1_f13.png)
