@@ -36,23 +36,23 @@ print(list.toSet.filter (i => list.indexOf (i) == list.lastIndexOf (i)))
 ```
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_3_p5.jpg) 
  
-### 6. Create a mutable map named names containing the following
-     "Jose", 20, "Luis", 24, "Ana", 23, "Susana", "27"
-     ```Scala
-     val names = collection.mutable.Map(("Jose", 20), ("Luis", 24), ("Ana", 23),("Susana", 27))
-    ```
+### 6. Create a mutable map named names containing the following 
+#### "Jose", 20, "Luis", 24, "Ana", 23, "Susana", "27"
+```Scala
+val names = collection.mutable.Map(("Jose", 20), ("Luis", 24), ("Ana", 23),("Susana", 27))
+```
   ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_3_p6.jpg) 
      
   #### 6 a . Print all the keys on the map
         
-     ```Scala
-     print(names.keys)
-     ```
+```Scala
+print(names.keys)
+```
   ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_3_p7.jpg) 
       
   #### 6 b . Add the following value to the map("Miguel", 23)
-      ```Scala
-     names += ("Miguel" -> 23)
-     print(names)  
-      ```
+```Scala
+names += ("Miguel" -> 23)
+print(names)  
+```
   ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/practice_3_p8.jpg) 
