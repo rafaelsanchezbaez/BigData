@@ -105,4 +105,4 @@ val dfmonth = df_HV.withColumn("Month",month(df_HV("Date")))
 val meanmonth = dfmonth.select($"Month",$"Close").groupBy("Month").mean()
 meanmonth.orderBy($"Month").select($"Month",$"avg(Close)").show()
 ```
- ![](blob/unidad_1/_images/Evaluation_Practice_p12.jpg)
+ ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unidad_1/_images/Evaluation_Practice_p12.jpg)
