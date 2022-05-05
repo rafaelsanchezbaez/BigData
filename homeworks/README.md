@@ -1,0 +1,9 @@
+# Homeworks
+
+## 1. Pair Coding
+What is pair coding?
+It is a method also known as pair programming, which is used for agile software development where it is specified that there are always two people working on the code at the same time and as far as possible they sit together, where one can take care of write the code and the other monitor in real time.
+It is important to assign different roles, for example, one programmer is assigned the code and the other supervises this code, it is very important that these roles are exchanged regularly since this is one of the rules of the programming pair, in this way it is avoided the hierarchical gap, where equality between both workers is promoted and a fluid exchange of roles is achieved.
+One of the advantages of this type of collaboration is that although there are differences in degrees of experience, the more experienced programmer can transmit his knowledge to his colleague with less experience with practice and in turn can contribute innovative ideas that can support the draft. This working method is very useful when dealing mainly with large projects.
+Another advantage of working in this way is that errors are minimized, since it is difficult to detect errors when writing the code, with the other colleague he concentrates only on the search for errors, in this way the errors are already minimized. that it is easy to detect one's own mistakes and it is always usually the colleagues who detect it.
+In the same way, working as a couple encourages the development of creativity at the time of development because there is an exchange of ideas that may not be achieved when working alone and this helps problems to be solved better in less time. weather. It should also be taken into account that this method helps to generate code with a shorter and more efficient design that allows the subsequent saving of resources in case of maintenance and adaptation.
