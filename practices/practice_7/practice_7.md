@@ -24,44 +24,44 @@ It is a probabilistic classifier based on Bayes' theorem and some additional sim
   
 ### Example
 ```scala
-//Importar las librerias necesarias
+//Import the necessary libraries
 
 import org.apache.spark.ml.classification.NaiveBayes
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.sql.SparkSession
 
-//Cargar los datos especificando la ruta del archivo
+//Load the data by specifying the file path
 
 val data = spark.read.format("libsvm").load("C:/spark/spark-2.4.8-bin-hadoop2.7/data/mllib/sample_libsvm_data.txt")
 
 println ("Numero de lineas en el archivo de datos:" + data.count ())
 
-//Mostrar las primeras 20 líneas por defecto
+//Show the first 20 lines by default
 
 data.show()
 
-//Divida aleatoriamente el conjunto de datos en conjunto de entrenamiento y conjunto de prueba de acuerdo con los pesos proporcionados. También puede especificar una seed
+//Randomly partition the data set into training set and test set according to the given weights. You can also specify a seed
 
 val Array (trainingData, testData) = data.randomSplit (Array (0.7, 0.3), 100L)
-// El resultado es el tipo de la matriz, y la matriz almacena los datos de tipo DataSet
+// The result is the type of the array, and the array stores the data of type DataSet
 
-//Incorporar al conjunto de entrenamiento (operación de ajuste) para entrenar un modelo bayesiano
+//Append to training set (fit operation) to train a Bayesian model
 val naiveBayesModel = new NaiveBayes().fit(trainingData)
 
-//El modelo llama a transform() para hacer predicciones y generar un nuevo DataFrame.
+//The model calls transform() to make predictions and generate a new DataFrame.
 
 val predictions = naiveBayesModel.transform(testData)
 
-//Salida de datos de resultados de predicción
+//Output of prediction results data
 predictions.show()
 
-//Evaluación de la precisión del modelo
+//Evaluation of model accuracy
 
 val evaluator = new MulticlassClassificationEvaluator().setLabelCol("label").setPredictionCol("prediction").setMetricName("accuracy")
-// Precisión
+// precision
 val precision = evaluator.evaluate (predictions) 
 
-//Imprimir la tasa de error
+//print error rate
 println ("tasa de error =" + (1-precision))
 ```
   
