@@ -10,7 +10,7 @@ It is a probabilistic classifier based on Bayes' theorem and some additional sim
 - The class with the highest posterior probability is the result of the prediction.
   
 ### Algorithm formula with the meaning of its variables
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_7/pic1.jpg) 
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_7/pic1.jpg) 
   
 ### Strengths
 - An easy and fast way to predict classes, for binary and multiclass classification problems.
@@ -66,4 +66,4 @@ println ("tasa de error =" + (1-precision))
 ```
   
 Result  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_7/pic2.jpg) 
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_7/pic2.jpg) 
