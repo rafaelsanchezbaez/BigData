@@ -65,5 +65,5 @@ val precision = evaluator.evaluate (predictions)
 println ("tasa de error =" + (1-precision))
 ```
   
-Result
+Result  
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_7/pic2.jpg) 
