@@ -53,5 +53,5 @@ val lsvcModel = lsvc.fit(training)
 // Print the coefficients and intercept for linear svc
 println(s"Coefficients: ${lsvcModel.coefficients} Intercept: ${lsvcModel.intercept}")
 ```  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_6/pic1.jpg)  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_6/pic2.jpg)
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_6/pic1.jpg)  
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_6/pic2.jpg)
