@@ -2,16 +2,16 @@
 ### **Multilayer perceptron classifier.**
 The Multilayer Perceptron Classifier (MLPC) is a classifier based on the feed-forward artificial neural network. The MLPC consists of multiple layers of nodes. Each layer is fully connected to the next layer of the network. The input layer nodes represent the input data.
 All other nodes map inputs to outputs by linearly combining the inputs with the node weights w and bias b applying an activation function. This can be written in matrix form for the MLPC with K+1 layers as follows:  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_5/pic1.jpg)
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_5/pic1.jpg)
 
 The nodes in the intermediate layers use the sigmoid (logistic) function:  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_5/pic2.jpg)
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_5/pic2.jpg)
 
 The output layer nodes use the softmax function:  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_5/pic3.jpg)
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_5/pic3.jpg)
 
 ### Multilayer perceptron example:  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_5/pic4.jpg)
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_5/pic4.jpg)
 
 ### Multilayer perceptron classifier.
 The number of nodes N in the output layer corresponds to the number of classes. MLPC uses backpropagation to learn the model. We use the logistic loss function for optimization and L-BFGS as optimization routine.
@@ -20,7 +20,7 @@ Layers can be classified into three types:
 - Input layer: Made up of those neurons that introduce input patterns into the network. No processing occurs in these neurons.
 - Hidden layers: Formed by those neurons whose inputs come from previous layers and whose outputs pass to neurons of later layers.
 - Output layer: Neurons whose output values correspond to the outputs of the entire network.  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_5/pic5.jpg)
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_5/pic5.jpg)
 
 ### Applications.
 The multilayer perceptron (hereinafter MLP, MultiLayer Perceptron) is used to solve problems of pattern association, image segmentation, data compression, etc.
@@ -65,4 +65,4 @@ println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
 ```
 
 ### Result
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/practices/practice_5/pic6.jpg)
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_5/pic6.jpg)
