@@ -16,16 +16,16 @@ val df = data.withColumn("sepal_length",$"sepal_length".cast("double")).withColu
 ```
   
 ### 2. What are the column names?  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/evaluation/evaluation_practice/pic1.jpg) 
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/evaluation/evaluation_practice/pic1.jpg) 
   
 ### 3. How is the scheme?  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/evaluation/evaluation_practice/pic2.jpg) 
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/evaluation/evaluation_practice/pic2.jpg) 
   
 ### 4. Print the first 5 columns.  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/evaluation/evaluation_practice/pic3.jpg) 
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/evaluation/evaluation_practice/pic3.jpg) 
   
 ### 5. Use the describe() method to learn more about the data in the DataFrame.  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/evaluation/evaluation_practice/pic4.jpg) 
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/evaluation/evaluation_practice/pic4.jpg) 
   
 ### 6. Make the pertinent transformation for the categorical data which will be our labels to classify.
 ```scala
@@ -67,8 +67,8 @@ val accuracy = evaluator.evaluate(predictions)
 
 println("Error = " + (1.0 - accuracy))
 ```  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/evaluation/evaluation_practice/pic5.jpg)  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/evaluation/evaluation_practice/pic6.jpg) 
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/evaluation/evaluation_practice/pic5.jpg)  
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/evaluation/evaluation_practice/pic6.jpg) 
    
 ### Conclusion
 This type of algorithms help us to make predictions, based on the data that we have previously of some situation, as in this practice that tries to predict what species each flower is according to the petal and sepal in terms of their size. . Basically, what it does is an algorithm that takes the data set as a basis to create the model and once it is done, it tests it to see if it was right and the precision tells us how much this model succeeds or fails. These models can help us, depending on the case, to make decisions that can prevent losses for a company or profits, as the case may be.
