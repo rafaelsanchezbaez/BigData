@@ -9,29 +9,29 @@ To make a prediction on a new instance, a random forest must aggregate the predi
    
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_3/pic2.jpg)   
 
-Why use random forest?
-It takes less training time compared to other algorithms. It predicts the output with high accuracy, even for the large data set that it runs efficiently.
-It can also maintain accuracy when a large proportion of data is missing.
+### Why use random forest?
+- It takes less training time compared to other algorithms. It predicts the output with high accuracy, even for the large data set that it runs efficiently.
+- It can also maintain accuracy when a large proportion of data is missing.
 
-Random forest apps
-Banking: The banking sector mainly uses this algorithm for loan risk identification.
-Medicine: With the help of this algorithm, disease trends and disease risks can be identified.
-Land use: We can identify areas of similar land use using this algorithm.
-Marketing: Marketing trends can be identified using this algorithm.
-
-
+### Random forest apps
+- Banking: The banking sector mainly uses this algorithm for loan risk identification.
+- Medicine: With the help of this algorithm, disease trends and disease risks can be identified.
+- Land use: We can identify areas of similar land use using this algorithm.
+- Marketing: Marketing trends can be identified using this algorithm.
 
 
-Advantage
-Random Forest is capable of performing classification and regression tasks.
-It is capable of handling large data sets with high dimensionality.
-It improves the accuracy of the model and avoids the problem of overfitting.
-
-Disadvantages
-Although random forest can be used for both classification and regression tasks, it is not best suited for regression tasks.
 
 
-Classification Example
+### Advantage
+- Random Forest is capable of performing classification and regression tasks.
+- It is capable of handling large data sets with high dimensionality.
+- It improves the accuracy of the model and avoids the problem of overfitting.
+
+### Disadvantages
+- Although random forest can be used for both classification and regression tasks, it is not best suited for regression tasks.
+
+
+### Classification Example
 ```scala
 import org.apache.spark.mllib.tree.RandomForest
 import org.apache.spark.mllib.tree.model.RandomForestModel
@@ -72,7 +72,7 @@ val sameModel = RandomForestModel.load(sc, "target/tmp/myRandomForestClassificat
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_3/pic3.jpg)
   
   
-Regression Example
+### Regression Example
 ```scala
 import org.apache.spark.mllib.tree.RandomForest
 import org.apache.spark.mllib.tree.model.RandomForestModel
