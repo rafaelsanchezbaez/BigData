@@ -1,7 +1,8 @@
 # Basic statistics
 ### Introduction
 Statistics is a form of mathematical analysis that uses models and quantified representations for a given set of experimental data or real-life studies.
-The main advantage of statistics is that the information is presented in a simple way.
+The main advantage of statistics is that the information is presented in a simple way.  
+
   
 ### Statistical Summary
 Summary statistics are a part of descriptive statistics that summarize and provide the gist of information about the sample data. including the mean, variance
