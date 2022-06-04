@@ -6,6 +6,8 @@ The main advantage of statistics is that the information is presented in a simpl
   
 ### Statistical Summary
 Summary statistics are a part of descriptive statistics that summarize and provide the gist of information about the sample data. including the mean, variance
+We provide column summary statistics for RDD[Vector] through the function colStats available in Statistics.
+colStats() returns an instance of MultivariateStatisticalSummary, which contains the column-wise max, min, mean, variance, and number of nonzeros, as well as the total count.
 ```scala
 package org.apache.spark.examples.mllib
 import org.apache.spark.{SparkConf, SparkContext}
@@ -39,6 +41,7 @@ def main() {
   
 ### Correlations
 Correlation is a statistical measure that expresses the extent to which two variables are linearly related (meaning they change together at a constant rate). It is a common tool for describing simple relationships without making a statement about cause and effect. If it is 0 to 1 it is a positive correlation, and 0 to -1 is negative the closer to 1 the stronger the correlation.
+The supported correlation methods are currently Pearson’s and Spearman’s correlation.
 ```scala
 package org.apache.spark.examples.mllib
 import org.apache.spark.{SparkConf, SparkContext}
