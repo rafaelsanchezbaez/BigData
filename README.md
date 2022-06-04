@@ -1,7 +1,6 @@
 # Unit 2
   
 ### Practices
-The practices carried out in the exhibitions of the different teams are shown.
 - [Practice 1]
 - [Practice 2]
 - [Practice 3]
