@@ -1,6 +1,7 @@
 # Practice evaluation 3
 #### Import a simple Spark session.
 ```scala
+import org.apache.spark.sql.SparkSession
 ``` 
 #### Use lines of code to minimize errors
 ```scala
