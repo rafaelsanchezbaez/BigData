@@ -53,5 +53,6 @@ model.save(sc, "target/tmp/myGradientBoostingClassificationModel")
 val sameModel = GradientBoostedTreesModel.load(sc,
   "target/tmp/myGradientBoostingClassificationModel")
 ``` 
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_4/Gradient%20boosted%20tree%20classifier.png?raw=true)
 
+As a result, 3 trees are obtained with a total of 2 classes for each tree.
