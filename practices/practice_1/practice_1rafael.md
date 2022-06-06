@@ -34,7 +34,7 @@ def main() {
     }
 }
 ``` 
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_1/SummaryStatistics.png?raw=true)
 # Correlations
 Correlation is a statistical measure that expresses the extent to which two variables are linearly related (meaning they change together at a constant rate). It’s a common tool for describing simple relationships without making a statement about cause and effect. If is 0 to 1 is a positive Correlation , and 0 to -1 a negative the more close to 1 is more strong correlation.
 ``` scala
@@ -79,7 +79,8 @@ def main(){
     }
 }
 ```
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_1/CorrelationExample.png?raw=true)
+
 # Hypothesis testing
 Hypothesis testing is a powerful tool in statistics to determine whether a result is statistically significant, whether this result occurred by chance or not Hypothesis Testing.
 ``` scala
@@ -144,5 +145,5 @@ def main() {
     }
 }
 ```
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_1/Hypothesis.png?raw=true)
 
