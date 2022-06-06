@@ -55,7 +55,7 @@ println(s"Learned classification forest model:\n ${model.toDebugString}")
 model.save(sc, "target/tmp/myRandomForestClassificationModel")
 val sameModel = RandomForestModel.load(sc, "target/tmp/myRandomForestClassificationModel")
 ```
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_3/Ramdomforest.png?raw=true)
 ### Regression Example
 ``` scala
 import org.apache.spark.mllib.tree.RandomForest
@@ -94,5 +94,6 @@ println(s"Learned regression forest model:\n ${model.toDebugString}")
 model.save(sc, "target/tmp/myRandomForestRegressionModel")
 val sameModel = RandomForestModel.load(sc, "target/tmp/myRandomForestRegressionModel")
 ```
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_3/Regresion.png?raw=true)
+
 
