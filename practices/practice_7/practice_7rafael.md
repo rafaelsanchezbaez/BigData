@@ -61,3 +61,5 @@ val precision = evaluator.evaluate (predictions)
 //Imprimir la tasa de error
 println ("tasa de error =" + (1-precision))
 ``` 
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_7/Naive_bayes1.png?raw=true)
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_7/Naive_bayes2.png?raw=true)
