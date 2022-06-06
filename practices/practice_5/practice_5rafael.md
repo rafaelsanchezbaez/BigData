@@ -2,8 +2,10 @@
 The Multilayer Perceptron Classifier (MLPC) is a classifier based on the feed-forward artificial neural network. The MLPC consists of multiple layers of nodes. Each layer is fully connected to the next layer of the network. The input layer nodes represent the input data.
 All other nodes map inputs to outputs by linearly combining the inputs with the node weights w and bias b and applying an activation function. This can be written in matrix form for the MLPC with K+1 layers as follows:
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_5/pic1.jpg?raw=true)
+
 The nodes in the intermediate layers use the sigmoid (logistic) function:
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_5/pic2.jpg?raw=true)
+
 The output layer nodes use the softmax function:
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/practices/practice_5/pic3.jpg?raw=true)
 ##### Multilayer perceptron example:
