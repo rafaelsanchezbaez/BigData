@@ -18,11 +18,17 @@ ALONSO VILLEGAS LUIS ANTONIO 18212139
 
 ## Índice
 Introducción -------------------------------------------2
+
 Marco teórico de los algoritmos------------------ 2
+
 Support vector machine (SVM)--------------------2
+
 Árbol de decisión--------------------------------------2
+
 Regresión logística.	3
+
 Perceptrón multicapa	4
+
 Implementación	5
 Apache Spark	5
 Resultados	5
