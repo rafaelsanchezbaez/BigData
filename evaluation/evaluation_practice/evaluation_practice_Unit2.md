@@ -16,7 +16,7 @@ val df = data.withColumn("sepal_length",$"sepal_length".cast("double")).withColu
 ```
   
 ### 2. What are the column names?  
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/evaluation/evaluation_practice/pic1Unit2.jpg) 
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/evaluation/evaluation_practice/pic1.jpg) 
   
 ### 3. How is the scheme?  
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/unit_2/evaluation/evaluation_practice/pic2.jpg) 
