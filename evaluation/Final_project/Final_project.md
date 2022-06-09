@@ -42,8 +42,6 @@ For example, logistic regression will take into account the values ​​assumed
 #### Multilayer perceptron
 The Perceptron Multilayer model is made up of an input layer, hidden layers and an output layer (Figure 4) which are made up of a series of neurons that are responsible for receiving, processing and sending data to other neurons, processing the information through different mathematical functions.
 
-![](https://www.researchgate.net/profile/V-Botti/publication/228815505/figure/fig1/AS:669385609994246@1536605374299/Figura-3-Ejemplo-de-perceptron-multicapa.png)
-
 ![](https://www.researchgate.net/profile/Henry-Paz/publication/281380920/figure/fig2/AS:391418657951750@1470332888950/Estructura-de-un-Perceptron-multicapa-Este-modelo-se-compone-de-la-siguiente-manera-o.png)
 
 
