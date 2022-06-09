@@ -43,6 +43,7 @@ For example, logistic regression will take into account the values ​​assumed
 The Perceptron Multilayer model is made up of an input layer, hidden layers and an output layer (Figure 4) which are made up of a series of neurons that are responsible for receiving, processing and sending data to other neurons, processing the information through different mathematical functions.
 
 ![](http://www.scielo.org.co/img/revistas/rcien/v18n2/v18n2a10-fig02.jpg)
+
 Figure 4[9]. Architecture of a Perceptron Multilayer Neural Network
 
 The neurons of the input layer receive the digital levels that an image pixel presents in its different multi-spectral bands, therefore, there will be a direct relationship between the number of neurons of the input layer and the number of bands of the input layer. image to classify. For their part, the hidden layers are responsible for representing the level of complexity that may exist in the relationship between the input layer and the output layer. The usual number of hidden layers is between one and two, so that it is possible to solve the complex separability of the covers. Finally, the output layer is responsible for producing the classification result of the neural network; For this reason, the number of neurons that make up this layer is directly related to the number of coverage classes to be identified.
@@ -190,6 +191,75 @@ val mean = sum/iterations
 
 ```
 Accuracy 30 SVM iterations
+
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/SVM1.png?raw=true)
+
+Average accuracy over 30 SVM iterations
+
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/SVM2.png?raw=true)
+
+We introduce the algorithm inside a while so that it performs the iterations automatically, we also create a vector to store the precision in each iteration and at the end with the .sum function we add all the values of our array, then we divide the result of the sum between the total number of iterations, which in this case were 30, and gave us 89.11% accuracy as a result.
+
+#### Logistic Regression Algorithm
+
+``` scala
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.ml.feature.StringIndexer
+import org.apache.spark.ml.feature.VectorAssembler
+import org.apache.spark.ml.linalg.Vectors
+import org.apache.spark.ml.classification.LogisticRegression
+import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+import org.apache.log4j._
+
+Logger.getLogger("org").setLevel(Level.ERROR)
+
+val spark = SparkSession.builder().getOrCreate()
+val data  = spark.read.option("header","true").option("inferSchema","true").option("delimiter", ";").format("csv").load("bank-full.csv")
+
+val label = new StringIndexer().setInputCol("y").setOutputCol("label")
+val labeltransform = label.fit(data).transform(data)
+
+val assembler = new VectorAssembler().setInputCols (Array ("balance", "day", "duration", "pdays", "previous")).setOutputCol("features")
+val data2 = assembler.transform(labeltransform)
+data2.show(1)
+
+val training = data2.select("features", "label")
+training.show(1)
+
+val iterations=30
+var z = new Array[Double](iterations)
+
+var y=0
+
+while(y < iterations){
+val splits = training.randomSplit(Array(0.7, 0.3))
+val train = splits(0)
+val test = splits(1)
+println("training set = ", train.count())
+println("test set = ", test.count())
+
+val lr = new  LogisticRegression().setMaxIter(10).setRegParam(0.1)
+val model = lr.fit(train)
+val result = model.transform(test)
+val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
+
+println(s"Coefficients: ${model.coefficients}")
+println(s"Intecept: ${model.intercept}")
+println(s"Accuraccy = ${evaluator.evaluate(result)}")
+z(y)=evaluator.evaluate(result)
+y=y+1
+}
+val sum=z.sum
+val mean = sum/iterations
+var h=0
+```
+Logistic Regression 30 iterations
+
+![]()
+
+Average accuracy over 30 iterations of Logistic Regression
+
+![]()
 
 
 
