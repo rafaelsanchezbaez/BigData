@@ -42,7 +42,7 @@ For example, logistic regression will take into account the values ​​assumed
 #### Multilayer perceptron
 The Perceptron Multilayer model is made up of an input layer, hidden layers and an output layer (Figure 4) which are made up of a series of neurons that are responsible for receiving, processing and sending data to other neurons, processing the information through different mathematical functions.
 
-![image](https://www.researchgate.net/profile/V-Botti/publication/228815505/figure/fig1/AS:669385609994246@1536605374299/Figura-3-Ejemplo-de-perceptron-multicapa.png)
+![](https://www.researchgate.net/profile/V-Botti/publication/228815505/figure/fig1/AS:669385609994246@1536605374299/Figura-3-Ejemplo-de-perceptron-multicapa.png)
 
 
 Figure 4[9]. Architecture of a Perceptron Multilayer Neural Network
@@ -118,6 +118,79 @@ Average over 30 Decision Tree iterations
 
 We introduce the algorithm inside a while so that it performs the iterations automatically, we also create a vector to store the precision in each iteration and at the end with the .sum function we add all the values of our array, then we divide the result of the sum between the total number of iterations, which in this case were 30, and gave us 89.03% accuracy as a result.
 
+SVM algorithm
+
+``` scala
+import org.apache.spark.mllib.classification.{SVMModel, SVMWithSGD}
+import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
+import org.apache.spark.mllib.evaluation.MulticlassMetrics
+import org.apache.spark.mllib.regression.LabeledPoint
+import org.apache.spark.ml.feature.VectorAssembler
+import org.apache.spark.ml.feature.VectorIndexer
+import org.apache.spark.ml.feature.StringIndexer
+import org.apache.spark.ml.linalg.Vector
+import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.ml.linalg.DenseVector
+import org.apache.spark.mllib.util.MLUtils
+import org.apache.spark.ml.feature.StandardScaler
+
+var data = spark.read.option("header", "true").option("inferSchema", "true").option("delimiter",";").csv("bank-full.csv").cache()
+
+val cols = Array("age", "feature_job", "feature_marital", "feature_education", "feature_default", "balance", "feature_loan","day", "feature_month", "duration", "campaign", "pdays", "previous", "feature_poutcome")
+
+val discrete_cols = Array("job","marital", "education", "default", "housing", "loan", "contact", "month", "poutcome", "y")
+
+val indexer = new StringIndexer()
+discrete_cols.foreach{
+  case(i) => {
+    indexer.setInputCol(i)
+    indexer.setOutputCol(s"feature_$i")
+    data = indexer.fit(data).transform(data)
+    data = data.drop(i)
+  }
+}
+
+val vecass = new VectorAssembler()
+vecass.setInputCols(cols)
+vecass.setOutputCol("features")
+
+val label_x_features = vecass.transform(data).select("feature_y", "features")
+
+val scaler = new StandardScaler()
+scaler.setInputCol("features")
+scaler.setOutputCol("scaled_features")
+
+val scaled = scaler.fit(label_x_features).transform(label_x_features).select("feature_y", "scaled_features")
+
+val libsvm = scaled.rdd.map( row => LabeledPoint(row.getAs[Double](0),Vectors.fromML(row.getAs[DenseVector](1))))
+
+val iterations=30
+var z = new Array[Double](iterations)
+
+var y=0
+while(y < iterations){
+val splits = libsvm.randomSplit(Array(0.7, 0.3))
+val training = splits(0).cache()
+val test = splits(1).cache()
+
+val model = SVMWithSGD.train(training, 100)
+
+val predictionAndLabels = test.map { case LabeledPoint(label, features) =>
+val prediction = model.predict(features)
+(prediction, label)
+}
+
+val metrics = new MulticlassMetrics(predictionAndLabels)
+val accuracy = metrics.accuracy
+println(s"Test accuracy $y: $accuracy")
+z(y)=accuracy
+y=y+1
+}
+val sum=z.sum
+val mean = sum/iterations
+
+```
+Accuracy 30 SVM iterations
 
 
 
