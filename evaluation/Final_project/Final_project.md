@@ -19,6 +19,8 @@ ALONSO VILLEGAS LUIS ANTONIO 18212139
 ## Index
 
 ## Introduction
+This document will address different machine learning algorithms, the main objective is to make a comparison of these algorithms. In order to know these models that can help us recognize patterns and thus predict future behavior.
+
 ## Theoretical framework of algorithms
 #### Support vector machine (SVM)
 Support vector machine (SVM) is a supervised learning algorithm used in many classification and regression problems, including medical signal processing, natural language processing, and image and speech recognition applications.
@@ -317,14 +319,15 @@ val mean = sum/iterations
 ```
 Multilayer Perceptron accuracy 30 iterations
 
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/MP1.png?raw=true)
 
 Average precision in 30 iterations of Multilayer Perceptron
 
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/MP2.png?raw=true)
 
 We introduce the algorithm inside a while so that it performs the iterations automatically, we also create a vector to store the precision in each iteration and at the end with the .sum function we add all the values of our array, then we divide the result of the sum between the total number of iterations, which in this case were 30, and gave us 88.26% accuracy as a result.
-|Test accuracy|
+
+
 |          | Test accuracy |                    |                    |                     |                       |
 |----------|:-------------:|:------------------:|:------------------:|:-------------------:|:---------------------:|
 |          |   Iteration  |    Decision Tree   |         SVM        | Logistic Regression | Multilayer Perceptron |
