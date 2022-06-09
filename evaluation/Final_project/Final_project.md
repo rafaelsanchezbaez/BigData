@@ -18,6 +18,22 @@ Rafael Sánchez Báez 1621254
 ALONSO VILLEGAS LUIS ANTONIO 18212139
 
 ## Index
+[Introduction](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#introduction)  
+[Theoretical framework of algorithms](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#theoretical-framework-of-algorithms)  
+- [Support vector machine (SVM)](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#support-vector-machine-svm)  
+- [Decision tree](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#decision-tree)  
+- [Logistic regression](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#logistic-regression) 
+- [Multilayer perceptron](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#multilayer-perceptron)
+[Implementation](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#implementation)
+- [Apache Spark](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#apache-spark)
+[Results](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#results)
+- [Algorithm decision tree](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#algorithm-decision-tree)
+- [SVM algorithm](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#svm-algorithm)
+- [Logistic Regression Algorithm](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#logistic-regression-algorithm)
+- [Multilayer Perceptron Algorithm](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#multilayer-perceptron-algorithm)
+[Conclusions](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#conclusions)
+[References](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#references)
+
 
 ## Introduction
 This document will address different machine learning algorithms, the main objective is to make a comparison of these algorithms. In order to know these models that can help us recognize patterns and thus predict future behavior.
@@ -41,7 +57,7 @@ The purpose of the analysis is to: predict the probability that a certain “eve
 Determine which variables weigh more to increase or decrease the probability that the event in question will happen to someone
 
 This assignment of the probability of occurrence of the event to a certain subject, as well as the determination of the weight that each of the dependent variables in this probability, are based on the characteristics of the subjects to whom, effectively, these occur or not. events.
-For example, logistic regression will take into account the values ​​assumed in a series of variables (age, sex, educational level, position in the household, migratory origin, etc.) by the subjects who are effectively unemployed (=1) and those who they are not (=0). Based on this, it will predict for each of the subjects – regardless of their real and current status – a certain probability of being unemployed (that is, of having a value of 1 in the dependent variable). Let's say, if someone is a young non-head of household, with low education and of male sex and migrant origin (although he is employed), the model will predict a high probability of being unemployed (since the unemployment rate of the group thus defined is high), generating a variable with those estimated probabilities. And it will proceed to classify it as unoccupied in a new variable, which will be the result of the prediction[6].
+For example, logistic regression will take into account the values assumed in a series of variables (age, sex, educational level, position in the household, migratory origin, etc.) by the subjects who are effectively unemployed (=1) and those who they are not (=0). Based on this, it will predict for each of the subjects – regardless of their real and current status – a certain probability of being unemployed (that is, of having a value of 1 in the dependent variable). Let's say, if someone is a young non-head of household, with low education and of male sex and migrant origin (although he is employed), the model will predict a high probability of being unemployed (since the unemployment rate of the group thus defined is high), generating a variable with those estimated probabilities. And it will proceed to classify it as unoccupied in a new variable, which will be the result of the prediction[6].
 #### Multilayer perceptron
 The Perceptron Multilayer model is made up of an input layer, hidden layers and an output layer (Figure 4) which are made up of a series of neurons that are responsible for receiving, processing and sending data to other neurons, processing the information through different mathematical functions.
 
@@ -56,8 +72,9 @@ In order to compare these four algorithms, Apache Spark was used with the Scala 
 
 #### Apache spark
 Apache Spark is today one of the most influential and important technologies in the world of Big Data. It is an open cluster computational system, unified analysis engine, ultrafast for Big Data and Machine Learning[1].
-In short, Spark is a general-purpose data processing engine, a set of tools with APIs that data scientists and application developers embed in their applications to quickly query, analyze, and transform data. It is capable of handling several petabytes of data at a time, distributed across a group of thousands of cooperating physical or virtual servers[4].
-##Results
+In short, Spark is a general-purpose data processing engine, a set of tools with APIs that data scientists and application developers embed in their applications to quickly query, analyze, and transform data. It is capable of handling several petabytes of data at a time, distributed across a group of thousands of cooperating physical or virtual servers[4].  
+
+## Results
 #### Algorithm Decision Tree
 ``` scala
 import org.apache.spark.ml.Pipeline
@@ -122,7 +139,7 @@ Average over 30 Decision Tree iterations
 
 We introduce the algorithm inside a while so that it performs the iterations automatically, we also create a vector to store the precision in each iteration and at the end with the .sum function we add all the values of our array, then we divide the result of the sum between the total number of iterations, which in this case were 30, and gave us 89.03% accuracy as a result.
 
-SVM algorithm
+#### SVM algorithm
 
 ``` scala
 import org.apache.spark.mllib.classification.{SVMModel, SVMWithSGD}
