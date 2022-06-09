@@ -15,24 +15,27 @@ Cuarta unidad
 ##### NOMBRE Y NÚMERO DE CONTROL DEL ALUMNO
 Rafael Sánchez Báez 1621254
 
-ALONSO VILLEGAS LUIS ANTONIO 18212139
+Alonso Villegas Luis Antonio 18212139
 
 ## Index
-[Introduction](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#introduction)  
+[Introduction](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#introduction)    
 [Theoretical framework of algorithms](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#theoretical-framework-of-algorithms)  
 - [Support vector machine (SVM)](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#support-vector-machine-svm)  
 - [Decision tree](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#decision-tree)  
-- [Logistic regression](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#logistic-regression) 
-- [Multilayer perceptron](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#multilayer-perceptron)
-[Implementation](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#implementation)
-- [Apache Spark](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#apache-spark)
-[Results](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#results)
-- [Algorithm decision tree](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#algorithm-decision-tree)
-- [SVM algorithm](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#svm-algorithm)
-- [Logistic Regression Algorithm](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#logistic-regression-algorithm)
-- [Multilayer Perceptron Algorithm](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#multilayer-perceptron-algorithm)
-[Conclusions](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#conclusions)
-[References](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#references)
+- [Logistic regression](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#logistic-regression)  
+- [Multilayer perceptron](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#multilayer-perceptron)  
+
+[Implementation](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#implementation)  
+- [Apache Spark](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#apache-spark)  
+
+[Results](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#results)  
+- [Algorithm decision tree](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#algorithm-decision-tree)  
+- [SVM algorithm](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#svm-algorithm)  
+- [Logistic Regression Algorithm](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#logistic-regression-algorithm)  
+- [Multilayer Perceptron Algorithm](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#multilayer-perceptron-algorithm)  
+
+[Conclusions](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#conclusions)  
+[References](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#references)  
 
 
 ## Introduction
@@ -73,7 +76,7 @@ In order to compare these four algorithms, Apache Spark was used with the Scala 
 #### Apache spark
 Apache Spark is today one of the most influential and important technologies in the world of Big Data. It is an open cluster computational system, unified analysis engine, ultrafast for Big Data and Machine Learning[1].
 In short, Spark is a general-purpose data processing engine, a set of tools with APIs that data scientists and application developers embed in their applications to quickly query, analyze, and transform data. It is capable of handling several petabytes of data at a time, distributed across a group of thousands of cooperating physical or virtual servers[4].  
-
+  
 ## Results
 #### Algorithm Decision Tree
 ``` scala
