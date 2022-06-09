@@ -18,15 +18,15 @@ Rafael Sánchez Báez 1621254
 Alonso Villegas Luis Antonio 18212139
 
 ## Index
-[Introduction](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#introduction)    
-[Theoretical framework of algorithms](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#theoretical-framework-of-algorithms)  
-- [Support vector machine (SVM)](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#support-vector-machine-svm)  
-- [Decision tree](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#decision-tree)  
-- [Logistic regression](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#logistic-regression)  
-- [Multilayer perceptron](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#multilayer-perceptron)  
+[Introduction](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#introduction)   
+[Theoretical framework of algorithms](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#theoretical-framework-of-algorithms)  
+- [Support vector machine (SVM)](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#support-vector-machine-svm)  
+- [Decision tree](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#decision-tree)  
+- [Logistic regression](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#logistic-regression)  
+- [Multilayer perceptron](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#multilayer-perceptron)  
 
-[Implementation](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#implementation)  
-- [Apache Spark](https://github.com/rafaelsanchezbaez/Big_Data/edit/Unit_4/evaluation/Final_project/Final_project.md#apache-spark)  
+[Implementation](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#implementation)  
+- [Apache Spark](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#apache-spark)  
 
 [Results](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#results)  
 - [Algorithm decision tree](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Final_project.md#algorithm-decision-tree)  
