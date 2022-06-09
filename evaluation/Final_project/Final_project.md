@@ -44,6 +44,8 @@ The Perceptron Multilayer model is made up of an input layer, hidden layers and 
 
 ![](https://www.researchgate.net/profile/V-Botti/publication/228815505/figure/fig1/AS:669385609994246@1536605374299/Figura-3-Ejemplo-de-perceptron-multicapa.png)
 
+![](https://www.researchgate.net/profile/Henry-Paz/publication/281380920/figure/fig2/AS:391418657951750@1470332888950/Estructura-de-un-Perceptron-multicapa-Este-modelo-se-compone-de-la-siguiente-manera-o.png)
+
 
 Figure 4[9]. Architecture of a Perceptron Multilayer Neural Network
 The neurons of the input layer receive the digital levels that an image pixel presents in its different multi-spectral bands, therefore, there will be a direct relationship between the number of neurons of the input layer and the number of bands of the input layer. image to classify. For their part, the hidden layers are responsible for representing the level of complexity that may exist in the relationship between the input layer and the output layer. The usual number of hidden layers is between one and two, so that it is possible to solve the complex separability of the covers. Finally, the output layer is responsible for producing the classification result of the neural network; For this reason, the number of neurons that make up this layer is directly related to the number of coverage classes to be identified.
