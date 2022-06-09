@@ -50,7 +50,8 @@ The neurons of the input layer receive the digital levels that an image pixel pr
 
 ## Implementation
 In order to compare these four algorithms, Apache Spark was used with the Scala language, Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way. It easily integrates features of object-oriented and functional languages[2].
-apache spark
+
+#### Apache spark
 Apache Spark is today one of the most influential and important technologies in the world of Big Data. It is an open cluster computational system, unified analysis engine, ultrafast for Big Data and Machine Learning[1].
 In short, Spark is a general-purpose data processing engine, a set of tools with APIs that data scientists and application developers embed in their applications to quickly query, analyze, and transform data. It is capable of handling several petabytes of data at a time, distributed across a group of thousands of cooperating physical or virtual servers[4].
 ##Results
@@ -360,3 +361,25 @@ We introduce the algorithm inside a while so that it performs the iterations aut
 | Average |               | 0.8903799251029177 | 0.8911808142133462 | 0.8843079996011859  | 0.8826816352565953    |
 |          |               | 89.03%             | 89.11%             | 88.43%              | 88.26%                |
 
+## Conclusions
+
+The algorithm that gave us the best result in terms of accuracy after 30 iterations was the SVM algorithm, with an average accuracy of 89.11%, followed by the decision tree algorithm, which came quite close with 89.03%. In last place is the Multilayer Perceptron algorithm, although it is not much different from the other algorithms, you always want to have the best precision of the data since this can prevent losses in companies or businesses.
+
+## References
+1. Ilabaca, S. (2019, 6 febrero). ¿Qué es Apache Spark? Analytics10. Recuperado 6 de junio de 2022, de https://www.analytics10.com/que-es-apache-spark/
+
+2. Introducción. (s. f.). Scala Documentation. Recuperado 6 de junio de 2022, de https://docs.scala-lang.org/es/tour/tour-of-scala.html
+
+3. MathWorks. (s. f.). Support Vector Machine (SVM). MATLAB & Simulink. Recuperado 5 de junio de 2022, de https://la.mathworks.com/discovery/support-vector-machine.html#:%7E:text=Support%20vector%20machine%20(SVM)%20es,reconocimiento%20de%20im%C3%A1genes%20y%20voz.
+
+4. Verjaga Felgueras, M. E. (2018, febrero). Análisis de datos y extracción de conocimiento utilizando big data. Tauja. Recuperado 6 de junio de 2022, de https://tauja.ujaen.es/bitstream/10953.1/8380/1/MEMORIA.pdf
+
+5. Berlanga Silvente, Rubio Hurtado & Vilà Baños, V. M. J. R. (2013, 8 enero). Cómo aplicar árboles de decisión en SPSS. Reire. Recuperado 6 de junio de 2022, de http://diposit.ub.edu/dspace/bitstream/2445/43762/1/618361.pdf
+
+6. Chitarroni., H. (2022, diciembre). La regresión logística. IDICSO. Recuperado 6 de junio de 2022, de https://racimo.usal.edu.ar/83/1/Chitarroni17.pdf
+
+7. Gandhi, R. (2018, 5 julio). Support Vector Machine — Introduction to Machine Learning Algorithms. Medium. Recuperado 7 de junio de 2022, de https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47
+
+8. Team, T. (2021, 6 julio). Decision Trees in R Analytics. TechVidvan. Recuperado 7 de junio de 2022, de https://techvidvan.com/tutorials/decision-tree-in-r/
+
+9. Please Wait. . . | Cloudflare. (s. f.). ResearchGate. Recuperado 7 de junio de 2022, de https://www.researchgate.net/figure/Figura-3-Ejemplo-de-perceptron-multicapa_fig1_228815505
