@@ -255,16 +255,64 @@ var h=0
 ```
 Logistic Regression 30 iterations
 
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/LR1.png?raw=true)
 
 Average accuracy over 30 iterations of Logistic Regression
 
-![]()
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/LR2.png?raw=true)
 
+We introduce the algorithm inside a while so that it performs the iterations automatically, we also create a vector to store the precision in each iteration and at the end with the .sum function we add all the values of our array, then we divide the result of the sum between the total number of iterations, which in this case were 30, and gave us 88.52% accuracy as a result.
 
+#### Multilayer Perceptron Algorithm
 
 ``` scala
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.ml.feature.VectorIndexer
+import org.apache.spark.ml.feature.VectorAssembler
+import org.apache.spark.ml.classification.MultilayerPerceptronClassifier
+import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+import org.apache.log4j._
 
+Logger.getLogger("org").setLevel(Level.ERROR)
+
+val spark = SparkSession.builder().getOrCreate()
+val df = spark.read.option("header","true").option("inferSchema","true").option("delimiter",";").format("csv").load("bank-full.csv")
+
+val change1 = df.withColumn("y",when(col("y").equalTo("yes"),1).otherwise(col("y")))
+val change2 = change1.withColumn("y",when(col("y").equalTo("no"),0).otherwise(col("y")))
+val newcolumn = change2.withColumn("y",'y.cast("Int"))
+
+val assembler = new VectorAssembler().setInputCols(Array("balance","day","duration","pdays","previous")).setOutputCol("features")
+val fea = assembler.transform(newcolumn)
+
+val cambio = fea.withColumnRenamed("y", "label")
+val training= cambio.select("label","features")
+
+val iterations=30
+var z = new Array[Double](iterations)
+
+var y=0
+
+while(y < iterations){
+val split = training.randomSplit(Array(0.7, 0.3))
+val train = split(0)
+val test = split(1)
+
+val layers = Array[Int](5, 2, 2, 4)
+
+val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setBlockSize(128).setSeed(1234L).setMaxIter(100)
+
+val model = trainer.fit(train)
+
+val result = model.transform(test)
+val predictionAndLabels = result.select("prediction", "label")
+val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
+println(s"Test set accuracy ${y+1} = ${evaluator.evaluate(predictionAndLabels)}")
+z(y)=evaluator.evaluate(predictionAndLabels)
+y=y+1
+}
+val sum=z.sum
+val mean = sum/iterations
 ```
 
 ![]()
