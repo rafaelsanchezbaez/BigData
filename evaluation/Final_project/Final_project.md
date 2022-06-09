@@ -36,10 +36,12 @@ Decision trees are a statistical technique for segmentation, stratification, pre
 Logistic regression is a statistical instrument for multivariate analysis, for both explanatory and predictive use. Its use is useful when there is a dichotomous dependent variable (an attribute whose presence or presence we have scored with the values ​​zero and one, respectively) and a set of predictor or independent variables, which can be quantitative (called covariates or covariates) or categorical. In the latter case, it is required that they be transformed into “dummy” variables, that is, simulated variables.
 The purpose of the analysis is to: predict the probability that a certain “event” will happen to someone: for example, being unemployed =1 or not being unemployed = 0, being poor = 1 or not poor = 0, graduating from a sociology degree =1 or not received = 0).
 Determine which variables weigh more to increase or decrease the probability that the event in question will happen to someone
+
 This assignment of the probability of occurrence of the event to a certain subject, as well as the determination of the weight that each of the dependent variables in this probability, are based on the characteristics of the subjects to whom, effectively, these occur or not. events.
 For example, logistic regression will take into account the values ​​assumed in a series of variables (age, sex, educational level, position in the household, migratory origin, etc.) by the subjects who are effectively unemployed (=1) and those who they are not (=0). Based on this, it will predict for each of the subjects – regardless of their real and current status – a certain probability of being unemployed (that is, of having a value of 1 in the dependent variable). Let's say, if someone is a young non-head of household, with low education and of male sex and migrant origin (although he is employed), the model will predict a high probability of being unemployed (since the unemployment rate of the group thus defined is high), generating a variable with those estimated probabilities. And it will proceed to classify it as unoccupied in a new variable, which will be the result of the prediction[6].
 #### Multilayer perceptron
 The Perceptron Multilayer model is made up of an input layer, hidden layers and an output layer (Figure 4) which are made up of a series of neurons that are responsible for receiving, processing and sending data to other neurons, processing the information through different mathematical functions.
+
 ![](https://www.researchgate.net/profile/V-Botti/publication/228815505/figure/fig1/AS:669385609994246@1536605374299/Figura-3-Ejemplo-de-perceptron-multicapa.png)
 
 Figure 4[9]. Architecture of a Perceptron Multilayer Neural Network
@@ -106,9 +108,11 @@ val sum=z.sum
 val mean = sum/iterations
 ```
 Accuracy 30 Iterations of the Decision Tree algorithm
+
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Decision_Tree1.png?raw=true)
 
 Average over 30 Decision Tree iterations
+
 ![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Decision_Tree2.png?raw=true)
 
 We introduce the algorithm inside a while so that it performs the iterations automatically, we also create a vector to store the precision in each iteration and at the end with the .sum function we add all the values of our array, then we divide the result of the sum between the total number of iterations, which in this case were 30, and gave us 89.03% accuracy as a result.
