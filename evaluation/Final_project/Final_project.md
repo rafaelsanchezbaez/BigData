@@ -41,6 +41,7 @@ For example, logistic regression will take into account the values ​​assumed
 #### Multilayer perceptron
 The Perceptron Multilayer model is made up of an input layer, hidden layers and an output layer (Figure 4) which are made up of a series of neurons that are responsible for receiving, processing and sending data to other neurons, processing the information through different mathematical functions.
 ![](https://www.researchgate.net/profile/V-Botti/publication/228815505/figure/fig1/AS:669385609994246@1536605374299/Figura-3-Ejemplo-de-perceptron-multicapa.png)
+
 Figure 4[9]. Architecture of a Perceptron Multilayer Neural Network
 The neurons of the input layer receive the digital levels that an image pixel presents in its different multi-spectral bands, therefore, there will be a direct relationship between the number of neurons of the input layer and the number of bands of the input layer. image to classify. For their part, the hidden layers are responsible for representing the level of complexity that may exist in the relationship between the input layer and the output layer. The usual number of hidden layers is between one and two, so that it is possible to solve the complex separability of the covers. Finally, the output layer is responsible for producing the classification result of the neural network; For this reason, the number of neurons that make up this layer is directly related to the number of coverage classes to be identified.
 
@@ -105,6 +106,12 @@ val sum=z.sum
 val mean = sum/iterations
 ```
 Accuracy 30 Iterations of the Decision Tree algorithm
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Decision_Tree1.png?raw=true)
+
+Average over 30 Decision Tree iterations
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_4/evaluation/Final_project/Decision_Tree2.png?raw=true)
+
+We introduce the algorithm inside a while so that it performs the iterations automatically, we also create a vector to store the precision in each iteration and at the end with the .sum function we add all the values of our array, then we divide the result of the sum between the total number of iterations, which in this case were 30, and gave us 89.03% accuracy as a result.
 
 
 
