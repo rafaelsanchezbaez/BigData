@@ -67,4 +67,4 @@ println(s"Within the stated sum of squared errors = $WSSSE")
 println("Cluster Centers: ")
 model.clusterCenters.foreach(println)
 ```
-![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/evaluation/evaluation_practice/pic1.jpg)
+![](https://github.com/rafaelsanchezbaez/Big_Data/blob/Unit_3/evaluation/evaluation_practice/pic1Unit3.jpg)
