@@ -52,7 +52,7 @@ Decision trees are a statistical technique for segmentation, stratification, pre
 ![](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/05/Parts-of-a-Decision-Tree.jpg)
 
 #### Logistic regression.
-Logistic regression is a statistical instrument for multivariate analysis, for both explanatory and predictive use. Its use is useful when there is a dichotomous dependent variable (an attribute whose presence or presence we have scored with the values ​​zero and one, respectively) and a set of predictor or independent variables, which can be quantitative (called covariates or covariates) or categorical. In the latter case, it is required that they be transformed into “dummy” variables, that is, simulated variables.
+Logistic regression is a statistical instrument for multivariate analysis, for both explanatory and predictive use. Its use is useful when there is a dichotomous dependent variable (an attribute whose presence or presence we have scored with the values zero and one, respectively) and a set of predictor or independent variables, which can be quantitative (called covariates or covariates) or categorical. In the latter case, it is required that they be transformed into “dummy” variables, that is, simulated variables.
 The purpose of the analysis is to: predict the probability that a certain “event” will happen to someone: for example, being unemployed =1 or not being unemployed = 0, being poor = 1 or not poor = 0, graduating from a sociology degree =1 or not received = 0).
 Determine which variables weigh more to increase or decrease the probability that the event in question will happen to someone
 
